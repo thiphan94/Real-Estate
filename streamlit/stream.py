@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
-
 from streamlit_pandas_profiling import st_profile_report
 from ydata_profiling import ProfileReport
 
 st.title("Data Profiling App")
-st.subheader("This app will help you to do Data Exploration")
+st.subheader("Explore and profile your dataset by uploading a CSV or XLSX file.")
 
 st.sidebar.header("User Input Features")
 
@@ -20,10 +19,10 @@ if uploaded_file is not None:
     elif uploaded_file.name.endswith(".csv"):
         input_df = pd.read_csv(uploaded_file)
     else:
-        st.error("Unsupported file format. Please upload an XLSX or CSV file.")
+        st.error("Unsupported file format. Please upload a CSV or XLSX file.")
         st.stop()
 
-    profile = ProfileReport(input_df, title="New Data for profiling")
+    profile = ProfileReport(input_df, title="New Data for Profiling")
 
     st.subheader("Detailed Report of the Data Used")
 
