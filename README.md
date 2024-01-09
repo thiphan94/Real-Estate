@@ -23,7 +23,7 @@ The project is organized into the following components:
 3. **Streamlit Dashboard:**
    - Implements a Streamlit app for interactive data exploration.
    - Allows users to upload a CSV or XLSX file, view data, and explore profiling reports.
-
+![Streamlit](./img/streamlit.png)
 4. **EDA (Exploratory Data Analysis):**
    - Utilizes Matplotlib and Seaborn for in-depth data visualization.
    - Explores relationships, distributions, and trends within the dataset.
