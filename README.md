@@ -48,3 +48,6 @@ Execute the following command in your terminal to run the Streamlit app:
 
 ```bash
 streamlit run app.py
+```
+## To do 
+CI/CD
